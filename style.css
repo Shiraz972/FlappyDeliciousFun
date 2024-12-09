@@ -61,3 +61,21 @@ button:hover {
     font-size: 18px;
     color: #f4f4f9;
 }
+/* Snowflake Styling */
+.snowflake {
+    position: absolute;
+    top: 0;
+    font-size: 1.5em;
+    color: white;
+    pointer-events: none;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}

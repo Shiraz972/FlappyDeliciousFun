@@ -27,11 +27,12 @@ body {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90%;
-    max-width: 400px;
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half width and height for exact centering */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit the maximum width */
 }
 
 input[type="number"] {

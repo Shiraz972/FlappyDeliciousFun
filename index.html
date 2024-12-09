@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number</title>
+    <title>Guess the Number Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Guess the Number</h1>
-        <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
-        
-        <input type="number" id="guess-input" placeholder="Enter your guess" />
-        <button id="submit-button">Guess</button>
-        <p id="feedback"></p>
-        
-        <button id="restart-button" style="display: none;">Restart Game</button>
+    <!-- Snowflakes Effect -->
+    <div class="snow-container"></div>
+
+    <!-- Game Box Centered -->
+    <div class="container-wrapper">
+        <div class="container">
+            <h1>Guess the Number</h1>
+            <p>I'm thinking of a number between 1 and 50. Can you guess it?</p>
+            <input type="number" id="guess-input" placeholder="Enter your guess" />
+            <button id="submit-button">Guess</button>
+            <p id="feedback"></p>
+            <button id="restart-button" style="display: none;">Restart Game</button>
+        </div>
     </div>
 
     <script src="script.js"></script>

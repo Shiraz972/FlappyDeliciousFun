@@ -1,27 +1,23 @@
-import random
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+        
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <button id="submit-button">Guess</button>
+        <p id="feedback"></p>
+        
+        <button id="restart-button" style="display: none;">Restart Game</button>
+    </div>
 
-def guess_the_number():
-    print("Welcome to 'Guess the Number'!")
-    print("I'm thinking of a number between 1 and 100.")
-    
-    number_to_guess = random.randint(1, 100)
-    attempts = 0
-    guessed_correctly = False
-
-    while not guessed_correctly:
-        try:
-            user_guess = int(input("Enter your guess: "))
-            attempts += 1
-
-            if user_guess < number_to_guess:
-                print("Too low! Try again.")
-            elif user_guess > number_to_guess:
-                print("Too high! Try again.")
-            else:
-                guessed_correctly = True
-                print(f"Congratulations! You guessed it in {attempts} attempts.")
-        except ValueError:
-            print("Invalid input. Please enter a number between 1 and 100.")
-
-if __name__ == "__main__":
-    guess_the_number()
+    <script src="script.js"></script>
+</body>
+</html>
